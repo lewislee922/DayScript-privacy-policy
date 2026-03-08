@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DayScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; animation: fadeIn 0.3s ease-in-out; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold shadow-sm">
+                    D
+                </div>
+                <span class="font-bold text-lg tracking-tight text-slate-900 hidden sm:inline">DayScript</span>
+            </div>
+            
+            <div class="flex p-1 bg-slate-100 rounded-xl overflow-x-auto">
+                <button onclick="switchLang('zh-hant')" id="btn-zh-hant" 
+                    class="text-xs font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 bg-white text-slate-900 shadow-sm whitespace-nowrap">
+                    繁體中文
+                </button>
+                <button onclick="switchLang('zh-hans')" id="btn-zh-hans" 
+                    class="text-xs font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 text-slate-500 hover:text-slate-900 whitespace-nowrap">
+                    简体中文
+                </button>
+                <button onclick="switchLang('en')" id="btn-en" 
+                    class="text-xs font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 text-slate-500 hover:text-slate-900 whitespace-nowrap">
+                    English
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        
+        <article id="lang-zh-hant" class="lang-section active">
+            <header class="mb-12">
+                <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">隱私權政策</h1>
+                <p class="text-slate-500 font-medium">最後更新日期：2026年3月8日</p>
+            </header>
+
+            <div class="space-y-10">
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">1. 介紹</h2>
+                    <p class="text-lg text-slate-600">歡迎使用 <strong>簡曆紀錄</strong>。我們非常重視您的隱私，並致力於保護您的個人資料。本政策旨在說明本 App 如何處理您的資訊。</p>
+                </section>
+
+                <section class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                    <h2 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        隱私承諾
+                    </h2>
+                    <p class="text-blue-800">本 App 秉持「隱私優先」的設計理念。我們不收集、不儲存，也不會將任何個人資料傳輸至外部伺服器。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">2. 權限說明與資料用途</h2>
+                    <div class="grid md:grid-cols-1 gap-6">
+                        <div class="border border-slate-200 p-5 rounded-xl">
+                            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                行事曆存取權限
+                            </h3>
+                            <p class="text-slate-600">本 App 會要求存取您 iOS 系統的行事曆，以便在 App 內顯示與管理您的行程。我們不會將此資料複製到我們的儲存空間或任何第三方服務。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">3. 本地儲存</h2>
+                    <p class="text-slate-600">所有 App 設定與由使用者產生的紀錄均儲存於您個人裝置的本地沙盒空間（Sandboxed Storage）。我們無法進行任何遠端存取。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">4. 聯絡我們</h2>
+                    <p class="text-slate-600">如果您對本隱私權政策有任何疑問，請透過以下方式聯絡：</p>
+                    <p class="mt-4 font-bold text-blue-600 text-lg underline decoration-2 underline-offset-4">lewistechspot@gmail.com</p>
+                </section>
+            </div>
+        </article>
+
+        <article id="lang-zh-hans" class="lang-section">
+            <header class="mb-12">
+                <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">隐私政策</h1>
+                <p class="text-slate-500 font-medium">最后更新日期：2026年3月8日</p>
+            </header>
+
+            <div class="space-y-10">
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">1. 介绍</h2>
+                    <p class="text-lg text-slate-600">欢迎使用 <strong>简历纪录</strong>。我们非常尊重您的隐私，并致力于保护您的个人数据。本政策旨在说明我们处理您信息的方式。</p>
+                </section>
+
+                <section class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                    <h2 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        隐私承诺
+                    </h2>
+                    <p class="text-blue-800">本 App 遵循“隐私优先”的设计原则。我们不收集、不存储，也不会将任何个人数据传输至外部服务器。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">2. 权限说明与数据用途</h2>
+                    <div class="grid md:grid-cols-1 gap-6">
+                        <div class="border border-slate-200 p-5 rounded-xl">
+                            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                日历访问权限
+                            </h3>
+                            <p class="text-slate-600">本 App 会申请访问您 iOS 系统的日历，以便在本地显示和管理日程。我们不会将此数据复制到我们的存储空间或任何第三方服务中。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">3. 本地存储</h2>
+                    <p class="text-slate-600">所有 App 设置和用户生成的数据均存储在您设备的本地沙盒存储中。我们无法进行远程访问。</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">4. 联系我们</h2>
+                    <p class="text-slate-600">如果您对本隐私政策有任何疑问，请通过以下方式联系：</p>
+                    <p class="mt-4 font-bold text-blue-600 text-lg underline decoration-2 underline-offset-4">lewistechspot@gmail.com</p>
+                </section>
+            </div>
+        </article>
+
+        <article id="lang-en" class="lang-section">
+            <header class="mb-12">
+                <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Privacy Policy</h1>
+                <p class="text-slate-500 font-medium">Last Updated: March 8, 2026</p>
+            </header>
+
+            <div class="space-y-10">
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">1. Introduction</h2>
+                    <p class="text-lg text-slate-600">Welcome to <strong>DayScript</strong>. We respect your privacy and are committed to protecting your personal data. This policy explains our practices regarding your information.</p>
+                </section>
+
+                <section class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                    <h2 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        Privacy Commitment
+                    </h2>
+                    <p class="text-blue-800">Our app follows a "Privacy by Design" approach. We do not collect, store, or transmit any personal data to external servers.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">2. Permissions & Data Usage</h2>
+                    <div class="grid md:grid-cols-1 gap-6">
+                        <div class="border border-slate-200 p-5 rounded-xl">
+                            <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                Calendar Access
+                            </h3>
+                            <p class="text-slate-600">The app requests access to your iOS Calendar to display and manage events locally. We do not copy this data to our own storage or any third-party services.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">3. Local Storage</h2>
+                    <p class="text-slate-600">All app settings and user-generated data are stored locally on your device using internal sandboxed storage. We have no way to access this data remotely.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">4. Contact Us</h2>
+                    <p class="text-slate-600">If you have any questions about this Privacy Policy, please contact us at:</p>
+                    <p class="mt-4 font-bold text-blue-600 text-lg underline decoration-2 underline-offset-4">lewistechspot@gmail.com</p>
+                </section>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="border-t border-slate-200 py-10 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center text-slate-400 text-sm">
+            &copy; 2026 Lewis Lee. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            const buttons = {
+                'en': document.getElementById('btn-en'),
+                'zh-hans': document.getElementById('btn-zh-hans'),
+                'zh-hant': document.getElementById('btn-zh-hant')
+            };
+            
+            const activeClasses = ['bg-white', 'text-slate-900', 'shadow-sm'];
+            const inactiveClasses = ['text-slate-500', 'hover:text-slate-900'];
+
+            Object.keys(buttons).forEach(key => {
+                if (key === lang) {
+                    buttons[key].classList.add(...activeClasses);
+                    buttons[key].classList.remove(...inactiveClasses);
+                } else {
+                    buttons[key].classList.remove(...activeClasses);
+                    buttons[key].classList.add(...inactiveClasses);
+                }
+            });
+
+            const langMap = {
+                'en': 'en',
+                'zh-hans': 'zh-Hans',
+                'zh-hant': 'zh-Hant'
+            };
+            document.documentElement.lang = langMap[lang];
+        }
+    </script>
+</body>
+</html>
